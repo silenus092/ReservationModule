@@ -2,8 +2,8 @@
     "name": "ict21/reservation",
     "description": "For integrated reservation module",
     "keywords": ["reservation","booking"],
-    "homepage": "https://github.com/Seldaek/monolog",
-
+    "homepage": "https://github.com/silenus092/ReservationModule/",
+    "license": "MIT",
     "authors": [
         {
             "name": "Bigboss",
@@ -11,5 +11,7 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require": {
+        "php": ">=5.3.0"
+    }
 }
