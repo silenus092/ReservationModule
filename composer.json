@@ -1,0 +1,15 @@
+{
+    "name": "ict21/reservation",
+    "description": "For integrated reservation module",
+    "keywords": ["reservation","booking"],
+    "homepage": "https://github.com/Seldaek/monolog",
+
+    "authors": [
+        {
+            "name": "Bigboss",
+            "email": "kunaphas.kon@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
