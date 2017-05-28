@@ -1,0 +1,38 @@
+1. clone project
+composer require ict21/reservation
+
+
+2. create database
+php artisan migrate --package="vendor/ict21"
+
+3. To use
+
+* Add the following item to config/app.php
+Providers array:
+    ICT\reservation\ICTReservationServiceProvider::class,
+
+    and aliases
+
+    'Reservation'=> \ICT\reservation\ICTReservationController::class
+
+ * usage
+$reservation  =  new Reservation();
+
+
+    $reservation_array = [
+        'email' => "xys@fd.co",
+        'roomtype_name'  => "TestType",
+        'name'  => "salmon",
+        'last_name'     => 'sam',
+        'phone'     => '78945612',
+        'check_in' => '2017-12-12',
+        'check_out' => '2017-12-18',
+        'quota_room' => '5',
+        'adult' => '2',
+        'child' => '2,
+        'fee' => '50000',
+        'nights' => '7',
+
+    ];
+
+    $results = $reservation->reserveStore($reservation_array);
